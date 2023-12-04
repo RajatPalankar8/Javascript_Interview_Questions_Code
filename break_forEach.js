@@ -1,20 +1,13 @@
-const arr = ['🥚','🐔'];
+const arr = [1,2,3,4,5];
 
-console.log("🥚 Egg => ",arr[0].charCodeAt(0));
-console.log("🐔 Chicken => ",arr[1].charCodeAt(0));
+try {
+    arr.forEach((value,index)=>{
+        if(value == 2){
+          throw new Error();
+        }
+        console.log('Item =>',value)
+    })  
+} catch (error) {
 
-arr.sort();
-
-console.log(arr);
-
-// try {
-//     arr.forEach((value,index)=>{
-//         if(value == 2){
-//           throw new Error();
-//         }
-//         console.log('Item =>',value)
-//     })  
-// } catch (error) {
-
-// }
+}
 
