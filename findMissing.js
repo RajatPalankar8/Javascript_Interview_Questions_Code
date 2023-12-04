@@ -1,10 +1,10 @@
-var arr = [1,4,5];
+var arr = [, , 4,5];
 
 count = arr.length;
 
 var missing = new Array();
 
-for (var i = 1; i <= count; i++) {
+for (var i = 0; i <= count; i++) {
   if (arr.indexOf(i) == -1) {
     missing.push(i);
   }
