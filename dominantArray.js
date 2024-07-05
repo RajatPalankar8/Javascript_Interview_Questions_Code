@@ -1,3 +1,4 @@
+const prompt = require('prompt-sync')();
 function isDominantElementPresent(arr) {
    
    var count = {};
@@ -18,9 +19,6 @@ var maxFrequency = 0;
     
 return isDominant;
 }
-
-
-
 
 function main() {
     const t = parseInt(prompt("Enter the number of test cases:"));
